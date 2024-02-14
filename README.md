@@ -35,3 +35,10 @@ To access the GPIO A port you have to activate the clock. This can be done by se
 Using one bit you cvan produce two values eg: 2^1(0,1); 2^2(4) values; 2^10(1024)values; 2^32(4 gega ) values.
 The function mode of the GPIO pin can be configured using the first 6 bits of the MODER register(a16).
 You can enable or disable the pull up or pull down register by setting or clearing the ccorresponding bits in the MODER register.
+
+MODER
+to configure the I/O direction mode
+1. 00 : input (reset state)
+2. 01 : General purpose output mode
+3. 10 : Alternate function mode
+4. 11 : Analog mode
