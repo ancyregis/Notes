@@ -1,6 +1,8 @@
 # Notes
 Daily update about classes
 
+14/02/2024
+
 RAM -> primary storage memory, two types of Ram SRAM(Static Ram) and DRAM(Dynamic RAM), both SRam and DRam are volatile memory, SRam is made up of capacitors,SRam is faster than DRam.
 CPU knows only addition, and other operations are performed by architecture.
 Secondary memory is non volatile, and it includes storage devices like hard drives and SSDs
@@ -42,3 +44,39 @@ to configure the I/O direction mode
 2. 01 : General purpose output mode
 3. 10 : Alternate function mode
 4. 11 : Analog mode
+
+15/02/2024
+
+GPIO have 7 memory space and address, that memory space is called Registers.
+
+REGISTERS
+1. MODER
+2. OTYPER
+3. OSPEEDER
+4. PUPDR
+5. IDR
+6. ODR
+7. BSRR
+8. LCKR
+9. AFRL
+10. AFRH
+
+GPIOA base address will be -> 0x40020000
+When we know the base address of GPIOA and we know the offset 0x00 then we can know the place.
+
+MODER register
+base address + offset : 0x00
+
+OTYPER register
+base address + offset : 0x04
+
+pheripheral base 40020000
+                 offset 20000
+base address    40000000
+                pheripheral base (pheriph base + AHBIperiph_offset)
+         (GPIO_OFFSET = 0x0000UL)
+
+GPIO_BASE (AHB1PERIPH_BASE + GPIO_OFFSET)
+When we use the (volatile unsigned int *)then we call as address
+integer poiter typecaste (RCC_BASE + AHB1EN_R_OFFSET)will be changes as address.
+(*(volatile unsigned int *)(RCC_BASE + AHB1EN_R_OFFSET))
