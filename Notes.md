@@ -76,6 +76,15 @@ base address    40000000
                 pheripheral base (pheriph base + AHBIperiph_offset)
          (GPIO_OFFSET = 0x0000UL)
 
+16/2/24
+
+__IO -> volatile
+GPIO typedef*GPIO_BASE
+here GPIO typedef is one structure for different address GPIOA BASE, GPIOB BASE,.....
+AHB1ENR , The registers above the ABH1ENR  should be used for that we will create a dummy , The registers below the ABH1ENR  is no need to use.
+DELAY -> used to blink
+RR_TYPEDEF* -> using structure you cahnge all the values to address.
+
 GPIO_BASE (AHB1PERIPH_BASE + GPIO_OFFSET)
 When we use the (volatile unsigned int *)then we call as address
 integer poiter typecaste (RCC_BASE + AHB1EN_R_OFFSET)will be changes as address.
