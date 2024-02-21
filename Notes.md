@@ -89,3 +89,52 @@ GPIO_BASE (AHB1PERIPH_BASE + GPIO_OFFSET)
 When we use the (volatile unsigned int *)then we call as address
 integer poiter typecaste (RCC_BASE + AHB1EN_R_OFFSET)will be changes as address.
 (*(volatile unsigned int *)(RCC_BASE + AHB1EN_R_OFFSET))
+
+21/02/2024
+
+SERIAL Communication
+sender----->reciver
+data being transffered  one by one(line by line process)
+less cost
+8 bit data is transferred one bit ata a time
+serial communication uses two methods: 
+1.SYNCHRONOUS
+clock is transmitted with data
+2. ASYNCHRONOUS
+no clock is transmitted(baudrate)
+
+PARALLEL communication
+      ------->
+sender------->reciver
+      ------->
+
+8 bit data is transferred at the same time
+hight cost
+faster than serial communication
+
+Mbps - mega bits per second
+LSB - Least dignificance bit
+MSB - Most Significance bit
+UART- universal asynchronous receiver/transmitter
+UART is a serial communication.
+
+DUPLEX
+Data can be transmitted and received
+               transmitter------------->receiver
+               receiver<----------------transmitter
+eg: phone
+SIMPLEX
+Data can be transmitied only an received only.
+- one direction only
+eg: FM
+           transmitter----------------->receiver
+HALFDUPLEX
+Data can be transmitted in only one way at a time
+FULLDUPLEX         
+Data can be transmitted in both ways.
+eg:UART
+→In arynchronous transmission, each byte (character) is packed between start and stop bite
+
+In UART-it (stop bit) can be a bit, 1 bit or 1/2 bit
+→ Baudrate
+connection speed expereused in bets per second
