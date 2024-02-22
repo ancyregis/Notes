@@ -138,3 +138,32 @@ eg:UART
 In UART-it (stop bit) can be a bit, 1 bit or 1/2 bit
 → Baudrate
 connection speed expereused in bets per second
+
+22/02/2024
+
+sudo apt get install minicom
+for linux everything is a file or it is a process,in linux mouse, keyboard are file
+
+in new tab
+ls /
+ls /dev
+ls -l /dev
+
+SOC-system on chip ---->Name in soc 
+SOM-system on module------>phycore A5D2X
+SBC-single board computer----->rugged board A5D2X
+
+Three types of boot
+   1. flash memory boot
+   2. sd card  booot
+   3. network boot
+flash memory is like a harddisk
+
+at91.bootstrap ---->primary
+
+boot RDm-->it works as load to the SRAM
+u-boot--> it will load in .dtb RAM
+.dts--->device tree source
+.dtsi---->device tree source include
+.dtb--->compiles both .dts and .dtsi
+FInally load all and only mount thr RFS
