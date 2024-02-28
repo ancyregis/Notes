@@ -219,3 +219,60 @@ ls  -----> it is external command
  tree
  tree>tree-file
  vim tree-files  --->convert all to files
+
+28/2
+
+ARM:
+electronic Gadgets like phone , microcontrillert..etc
+ARM:
+Before ARM introduce we have CICS
+Cles ARM
+load and store These & instructions only work in memory other instructions all work in Registers.
+
+compile source file
+
+• C
+
+.i
+
+•S assembly
+
+elf.
+
+Secondary memory saves the saved codes.. when the code is send from secondary memory to primary.
+=> For one set architecture neraiya microarchitecture inukum.
+Arm is not a chip manufacturing company" design
+Family can have multiple architecture for that can have multiple procusor.
+
+ARM architecture specifier:
+Multiple procellor
+Instruction set
+Register set
+interrupt
+Exception model
+Memory model
+Debug, Trace and profilines
+
+fioud point: 2.456 , 4.789
+
+RISC- Reduced instruction set computer:
+simple instructions
+simple Addressing modes
+Load store Architecture
+Big Endian and little Endian
+Mioro architecture
+build and design of a processor
+Number and sizes of cache
+cycle court for individual instructions
+which optional feature are implemented.
+
+
+ARM Dowmentation:
+
+- ARM [architecture reference manual]
+
+- TRM [ Technical reference manual]
+
+CIM [Configuration and integration manual]
+
+ Soc datasheet.
