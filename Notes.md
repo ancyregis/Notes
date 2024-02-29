@@ -226,8 +226,8 @@ ARM:
 electronic Gadgets like phone , microcontrillert..etc
 ARM:
 Before ARM introduce we have CICS
-Cles ARM
-load and store These & instructions only work in memory other instructions all work in Registers.
+cics----> ARM
+load and store---> These & instructions only work in memory other instructions all work in Registers.
 
 compile source file
 
@@ -239,32 +239,32 @@ compile source file
 
 elf.
 
-Secondary memory saves the saved codes.. when the code is send from secondary memory to primary.
-=> For one set architecture neraiya microarchitecture inukum.
+Secondary memory saves the saved codes.. when the code is send from secondary memory to primary memory is called the process.
+=> For one set architecture there will be many microarchitecture availabel.
 Arm is not a chip manufacturing company" design
-Family can have multiple architecture for that can have multiple procusor.
+Family can have multiple architecture for that can have multiple processor.
 
 ARM architecture specifier:
-Multiple procellor
-Instruction set
-Register set
-interrupt
-Exception model
-Memory model
-Debug, Trace and profilines
 
-fioud point: 2.456 , 4.789
+1.Instruction set
+2.Register set
+3.Exception model(interrupt)
+4.Memory model
+5.Debug, Trace and profilines
+
+
 
 RISC- Reduced instruction set computer:
-simple instructions
-simple Addressing modes
-Load store Architecture
-Big Endian and little Endian
+1.simple instructions
+2.simple Addressing modes
+3.Load store Architecture
+4.Big Endian and little Endian
+
 Mioro architecture
-build and design of a processor
-Number and sizes of cache
-cycle court for individual instructions
-which optional feature are implemented.
+1.build and design of a processor
+2.Number and sizes of cache
+3.cycle court for individual instructions
+4.which optional feature are implemented.
 
 
 ARM Dowmentation:
@@ -273,6 +273,40 @@ ARM Dowmentation:
 
 - TRM [ Technical reference manual]
 
-CIM [Configuration and integration manual]
+-CIM [Configuration and integration manual]
 
- Soc datasheet.
+- Soc datasheet.
+
+
+
+29/2/24
+
+
+SHELL SCRIPT
+shell- is a program
+A shell script is a textfile containing a series of commands that are interpreted and executed by a shell program. shell scripts are used to automate tasks, execute commands or perform various oprations within the linux environment.
+
+mkdir folder name
+vim filename.sh
+                  #!/bin/bash
+                  echo "Rathinam Technical Campus"
+                  exit 0
+chmod 777 filename.sh
+./filename.sh
+
+Library--->system call--->kernel
+           it will acess the kernel
+PROCESS CREATION 
+system()-->Library function
+fork()-->system call
+wait()-->system call          ----->its all call the clone for execution
+waitpid()-->system call
+exec()-->system call
+clone()-->clone system call
+
+wait and waitpid is used avoid zombie process.
+to see the content inside folder we use "ls -al"
+By using System library we can run the bash command.
+there are 9 man pages available.
+
+Fork creates a new process then the new process is referred to us child process, the calling is called the parent process, both child and parent process have separate memory.
