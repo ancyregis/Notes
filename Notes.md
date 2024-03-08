@@ -310,3 +310,15 @@ By using System library we can run the bash command.
 there are 9 man pages available.
 
 Fork creates a new process then the new process is referred to us child process, the calling is called the parent process, both child and parent process have separate memory.
+
+
+1/3/24
+orphan-->chils is running , the parent is terminating
+zombie-->parent is running, child is terminating.
+In zombie process that we have to kill the parent,killing the parent by finding the id (kill -9 ID)
+To avoid zombie process we use wait system call
+silver bullet -9
+To kill zombie
+1)kill -9 "process IDF"
+2)ctrl+c
+T
